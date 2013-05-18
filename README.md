@@ -1,6 +1,4 @@
-interview
+puzzles
 =========
 
-random code for interview questions
-palindrome_number
-
+Programming puzzles, currently most questions are from technical interviews.
