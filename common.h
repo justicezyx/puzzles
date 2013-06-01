@@ -14,6 +14,7 @@
 #include <stack>
 #include <set>
 #include <queue>
+#include <unordered_map>
 using namespace std;
 
 template <typename ValueType>

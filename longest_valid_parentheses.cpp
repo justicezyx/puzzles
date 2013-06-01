@@ -1,20 +1,33 @@
-class Solution {
-public:
-    public int longestValidParentheses(String s) {
-        if(s == null || s.length() == 0)
-            return 0;
-        int count = 0;
-        Stack<Integer> stack = new Stack<Integer>();  //store position
-        for(int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            if(!stack.isEmpty() && s.charAt(stack.peek()) == '(' && c == ')') { //if valid
-                stack.pop();                                  
-                int start = stack.isEmpty() ? -1 : stack.peek();   //get the valid start position
-                count = Math.max(count, i - start);   //update the count
-            }
-            else 
-                stack.push(i);
+#include "common.h"
+
+/**
+ * Find the longest sub string that forms a valid parentheses string
+ * from an input string.
+ * Eg: "(((())" return 4
+ * "((((((()))))))" return 14
+ */
+
+int longest_valid_parentheses(const string& s) {
+    stack<int> pos;
+    int max = 0;
+    for (int i = 0; i < s.size(); ++i) {
+        if (!pos.empty() && s[pos.top()] == '(' && s[i] == ')') {
+            pos.pop();
+            int tmp = (pos.empty() ? -1 : pos.top());
+            int l = i - tmp;
+            max = std::max(max, l);
+        } else {
+            pos.push(i);
         }
-        return count;
     }
-};
+    return max;
+}
+
+void test() {
+    string s = "()(())";
+    cout<<longest_valid_parentheses(s)<<endl;
+}
+
+int main() {
+    test();
+}

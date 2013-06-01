@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cassert>
 
+#include "common.h"
+
 int inc(int x) {
     // return x + 1
     int c = 1;
@@ -28,11 +30,11 @@ int add(int x, int y) {
 
     int t = add(x >> 1, y >> 1);
     if (x % 2 && y % 2) {
-        inc(t);
+        t = inc(t);
     }
-    t <<= 2;
-    if ((x ^ y) % 2) {
-        inc(t);
+    t <<= 1;
+    if ((x & 1) ^ (y & 1)) {
+        t = inc(t);
     }
     return t;
 }
@@ -47,7 +49,9 @@ int add2(int x, int y) {
     int c = 0;
     int p = 1;
     int res = 0;
-    while (!x || !y || c) {
+    while (x || y || c) {
+        // cout<<"res: "<<res<<endl;
+
         if ((x & 1) ^ (y & 1)) {
             // differ
             if (c) {
@@ -57,10 +61,7 @@ int add2(int x, int y) {
                 res |= p;
                 c = 0;
             }
-        }
-
-
-        if (!(x & 1) && !(y & 1)) {
+        } else if (!(x & 1) && !(y & 1)) {
             // both are 0.
             if (c) {
                 res |= p;
@@ -69,9 +70,7 @@ int add2(int x, int y) {
                 res &= ~p;
                 c = 0;
             }
-        }
-
-        if ((x & 1) && (y & 1)) {
+        } else if ((x & 1) && (y & 1)) {
             if (c) {
                 res |= p;
             } else {
@@ -96,14 +95,13 @@ void test() {
     }
 
     for (int i = 0; i < 1000; i++) {
-        int a = rand() % 1<<30;
-        int b = rand() % 1<<30;
-        if(add(a, b) != a + b) {
-            std::cout<<"Wrong: "<<" a:"<<a<<" b:"<<b<<std::endl;
+        int a = rand() % 100;
+        int b = rand() % 100;
+        if (add(a, b) != a + b) {
+            cout<<"custom: "<<add(a, b)<<" res:"<<a + b<<endl;
         }
-
-        if(add2(a, b) != a + b) {
-            std::cout<<"Wrong: "<<" a:"<<a<<" b:"<<b<<std::endl;
+        if (add2(a, b) != a + b) {
+            cout<<"custom2: "<<add2(a, b)<<" res:"<<a + b<<endl;
         }
     }
 }
