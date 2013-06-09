@@ -71,6 +71,12 @@ int multi_way_selection(vector<vector<int>>& arrays, int k) {
             int sum = 0;
             vector<int> mids;
             mids.reserve(intervals.size());
+
+            // Note that the array that the global pivot is drawm from has been
+            // paritioned again, but the paritition implemention will keep the
+            // array intact. 
+            //
+            // Keep this redundant partition call to make it looks better.
             for (int k = 0; k < intervals.size(); ++k) {
                 int begin = intervals[k].first;
                 int end = intervals[k].second;
