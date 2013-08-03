@@ -1,5 +1,5 @@
-#ifndef COMMON_H
-#define COMMON_H
+#ifndef PUZZLE_COMMON_H
+#define PUZZLE_COMMON_H
 
 #include <sstream>
 #include <algorithm>
@@ -17,6 +17,8 @@
 #include <unordered_map>
 using namespace std;
 
+const int ERROR_CODE = 1;
+
 template <typename ValueType>
 ValueType convert(const char* text) {
     std::istringstream iss(text);
@@ -26,11 +28,19 @@ ValueType convert(const char* text) {
 }
 
 bool has_enough_arg(int arg_num, int argc, const char* text) {
+    // deprecated.
     if (argc < arg_num) {
         printf("%s, only:%d\n", text, argc);
         return false;
     }
     return true;
+}
+
+void has_enough_arg_or_die(int arg_num, int argc, const char* text) {
+    if (argc < arg_num) {
+        printf("%s, only:%d\n", text, argc);
+        exit(ERROR_CODE);
+    }
 }
     
 void test_has_enough_arg() {
