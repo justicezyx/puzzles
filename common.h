@@ -15,6 +15,8 @@
 #include <set>
 #include <queue>
 #include <unordered_map>
+namespace puzzles {
+
 using namespace std;
 
 const int ERROR_CODE = 1;
@@ -27,7 +29,7 @@ ValueType convert(const char* text) {
     return res;
 }
 
-bool has_enough_arg(int arg_num, int argc, const char* text) {
+inline bool has_enough_arg(int arg_num, int argc, const char* text) {
     // deprecated.
     if (argc < arg_num) {
         printf("%s, only:%d\n", text, argc);
@@ -36,18 +38,13 @@ bool has_enough_arg(int arg_num, int argc, const char* text) {
     return true;
 }
 
-void has_enough_arg_or_die(int arg_num, int argc, const char* text) {
+inline void has_enough_arg_or_die(int arg_num, int argc, const char* text) {
     if (argc < arg_num) {
         printf("%s, only:%d\n", text, argc);
         exit(ERROR_CODE);
     }
 }
     
-void test_has_enough_arg() {
-    has_enough_arg(10, 4, "pass");
-    has_enough_arg(1, 4, "pass is not show");
-}
-
 template<typename Iterator>
 void print(Iterator begin, Iterator end) {
     typedef typename Iterator::value_type value_type;
@@ -71,6 +68,7 @@ void print(const T0& data0, const T1& data1, const T2& data2) {
     std::cout<<data0<<data1<<data2<<std::endl;
 }
 
+inline 
 int rnd() {
     int t = rand() % 12;
     if (t < 4) {
@@ -83,14 +81,17 @@ int rnd() {
 
 typedef int (*rndgen)();
 
-std::vector<int> rnd_fill(int l, rndgen r) {
+inline
+std::vector<int> rnd_fill(size_t l, rndgen r) {
     std::vector<int> res;
     res.reserve(l);
 
-    for (int i = 0; i < l; ++i) {
+    for (size_t i = 0; i < l; ++i) {
         res.push_back(r());
     }
     return res;
+}
+
 }
 
 #endif
