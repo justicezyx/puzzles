@@ -1,3 +1,4 @@
+
 /**
  * 000
  * 001
@@ -25,6 +26,11 @@
  * 110
  * 111
  */
+
+#include "common.h"
+
+namespace puzzles {
+
 class Solution {
 public:
     vector<int> grayCode(int n) {
@@ -32,10 +38,12 @@ public:
         // DO NOT write int main() function
         int count = 1 << n;
         vector<int> res;
-        res.reserve(pow(2, n));
+        res.reserve(static_cast<size_t>(pow(2, n)));
         for (int i = 0; i < count; ++i) {
             res.push_back(i ^ (i >> 1));
         }
         return res;
     }
 };
+
+} // puzzles
