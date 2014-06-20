@@ -1,8 +1,8 @@
+#include "common.h"
+
 class Solution {
 public:
-    bool isValidSudoku(vector<vector<char> > &board) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
+    bool isValidSudoku(vector<vector<char>> &board) {
         vector<vector<bool> > rows(9, vector<bool>(9, false));
         vector<vector<bool> > cols(9, vector<bool>(9, false));
         vector<vector<bool> > blocks(9, vector<bool>(9, false));
@@ -19,3 +19,7 @@ public:
         return true;
     }
 };
+
+int main() {
+    Solution solver;
+}
