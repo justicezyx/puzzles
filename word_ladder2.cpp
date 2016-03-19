@@ -1,9 +1,7 @@
 #include "common.h"
 
 std::vector<std::vector<std::string>> 
-min_dist(std::string start,
-         std::string end,
-         std::set<std::string>& dict);
+min_dist(std::string start, std::string end, std::set<std::string>& dict);
 
 std::vector<std::vector<std::string>> 
 findLadders(std::string start, std::string end, std::set<std::string>& dict) {
@@ -65,7 +63,7 @@ min_dist(std::string start,
                         for (; itor != last; ++itor) {
                             std::vector<std::string> path = *itor;
                             path.push_back(end);
-                            print(path.begin(), path.end());
+                            puzzles::print(path.begin(), path.end());
                             res.push_back(path);
                         }
                     }
@@ -94,22 +92,15 @@ min_dist(std::string start,
 }
 
 void test() {
-    // std::string A[] = {"hot","cog","dot","dog","hit","lot","log"};
-    // std::string A[] = {"a", "b", "c"};
     std::string A[] = {"ted","tex","red","tax","tad","den","rex","pee"};
     int len = sizeof(A) / sizeof(std::string);
     std::set<std::string> dict(A, A + len);
-    for (int i = 0; i < len; ++i) {
-        dict.insert(A[i]);
-    }
-    // std::string start = "hit";
-    // std::string end = "cog";
     std::string start = "red";
     std::string end = "tax";
     std::vector<std::vector<std::string>> res = findLadders(start, end, dict);
     std::cout<<"res size:"<<res.size()<<std::endl;
     for (int i = 0; i < res.size(); ++i) {
-        print(res[i].begin(), res[i].end());
+      puzzles::print(res[i].begin(), res[i].end());
     }
 }
 
