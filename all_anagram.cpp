@@ -1,8 +1,6 @@
 class Solution {
 public:
     vector<string> anagrams(vector<string> &strs) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
         std::map<std::string, std::list<std::string>> h;
         for (int i = 0; i < strs.size(); ++i) {
             std::string str = strs[i];
@@ -11,12 +9,9 @@ public:
         }
         
         std::vector<std::string> res;
-        for (std::map<std::string, std::list<std::string>>::iterator itor = h.begin();
-             itor != h.end();
-             ++itor) {
-            
-            if (itor->second.size() > 1) {
-                res.insert(res.end(), itor->second.begin(), itor->second.end());
+        for (const auto& pair : h) {
+            if (pair.second.size() > 1) {
+                res.insert(res.end(), pair.second.begin(), pair.second.end());
             }
         }
         return res;

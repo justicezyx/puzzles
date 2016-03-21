@@ -1,8 +1,6 @@
 class Solution {
 public:
     int numDistinct(string S, string T) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
         std::vector<int> dp(T.size() + 1);
         dp[0] = 1;
         for (int i = 0; i < S.size(); ++i) {

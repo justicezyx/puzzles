@@ -7,7 +7,7 @@ struct comp {
 };
 
 // given an array, starting with all 1's and ending with all 0's.
-// find the index of the first apperance of 0
+// find the index of the first appearance of 0
 int first_zero(const vector<int>& nums) {
     int b = 0;
     int e = nums.size();

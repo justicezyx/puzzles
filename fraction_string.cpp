@@ -6,7 +6,6 @@ std::string fraction(int n, int d) {
 
     std::string res;
     if (n >= d) {
-        // res.push_back(itoa(n / d));
         std::ostringstream oss;
         oss<<(n / d);
         res += oss.str();

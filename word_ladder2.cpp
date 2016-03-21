@@ -5,8 +5,6 @@ min_dist(std::string start, std::string end, std::set<std::string>& dict);
 
 std::vector<std::vector<std::string>> 
 findLadders(std::string start, std::string end, std::set<std::string>& dict) {
-    // Start typing your C/C++ solution below
-    // DO NOT write int main() function
     std::vector<std::vector<std::string>> res;
     if (start == end) {
         std::vector<std::string> t;

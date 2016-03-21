@@ -2,8 +2,6 @@ class Solution {
 public:
     int cnt,upper;
     int totalNQueens(int n) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
        cnt = 0;
        upper = (1<<n)-1 ;
        Queen(0,0,0);

@@ -19,8 +19,6 @@ std::string most_beautiful_word(const std::string& str) {
     }
     
     for (int i = 0; i < str.size(); ++i) {
-        print(res.begin(), res.end());
-
         if (used[str[i]]) {
             --count[str[i]];
             continue;

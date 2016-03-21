@@ -1,8 +1,6 @@
 #include "common.h"
 
 void helper(std::vector<int>& num, int begin, int end, std::vector<std::vector<int> >& res) {
-    std::cout<<"candidate:";
-    print(num.begin() + begin, num.begin() + end);
     if (end - begin == 1) {
         print(num.begin(), num.end());
         res.push_back(num);

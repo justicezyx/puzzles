@@ -11,8 +11,9 @@ public:
         return set;
     }
     
-    void combinationSum(vector<int> &num, int target, int index, int *array, int count, vector<vector<int>> &set) {
-    
+    void combinationSum(vector<int> &num, int target, int index, int *array,
+        int count, vector<vector<int>> &set) {
+
         if (target < 0)
             return;
         if (target == 0) {
@@ -36,5 +37,4 @@ public:
             combinationSum(num, target-t, j, array, count, set);
         }
     }
-    
 };

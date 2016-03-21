@@ -4,9 +4,6 @@ using namespace std;
 class Solution {
 public:
     vector<vector<int> > generateMatrix(int n) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
-        
         vector<vector<int>> res(n, vector<int>(n, 1));
         if (n <= 1) {
             return res;

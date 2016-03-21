@@ -12,11 +12,8 @@ bool compare(const Interval& lhs, const Interval& rhs) {
 }
 
 class Solution {
-public:
-
+  public:
     vector<Interval> merge(vector<Interval> &intervals) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
         vector<Interval> res;
         if (intervals.empty()) { return res; }
         

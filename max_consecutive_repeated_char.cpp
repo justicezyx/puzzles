@@ -2,7 +2,7 @@
 using namespace std;
 
 /**
- * Find the list of chars that have the maximum consecutive repeatitions.
+ * Find the list of chars that have the maximum consecutive repetitions.
  */
 string solve(const string& str) {
     string res;

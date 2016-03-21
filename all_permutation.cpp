@@ -3,9 +3,7 @@
  */
 class Solution {
 public:
-    vector<vector<int> > permute(vector<int> &num) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
+    vector<vector<int>> permute(vector<int> &num) {
         if (num.size() == 0) {
             return std::vector<std::vector<int>>();
         }

@@ -1,39 +1,39 @@
-Local cache in a multi-process environment, shared memory caches
-1. hard to do lcoking and synchronization
-2. multicast, moved away from it because retransmit storm
+Local cache in a multi-process environment, shared memory caches 1. hard to do
+locking and synchronization 2. multicast, moved away from it because retransmit
+storm
 
-Exponentially distribute cache hit ratio, small data in local cache can satisfy most of the requests
+Exponentially distribute cache hit ratio, small data in local cache can satisfy
+most of the requests
 
-FIFO is too unbiased, cannot identify hot items
-manually parttion into multiple FIFI queues, hot queue and cold queue
+FIFO is too unbiased, cannot identify hot items manually partition into multiple
+FIFI queues, hot queue and cold queue
 
-Same rack shared cache, NFS package host, extremely low latency
-This increases the data available in cache store
+Same rack shared cache, NFS package host, extremely low latency This increases
+the data available in cache store
 
-Local cache needs multiple copies for hosts
-TTL-bounded requests; cache items are evicted after TTL, shared cache is more fridenly to TTL than local cache.
+Local cache needs multiple copies for hosts TTL-bounded requests; cache items
+are evicted after TTL, shared cache is more fridenly to TTL than local cache.
 
-Splited page rendering. Need memcached, increased network traffic increase cache effectiveness, increased control complexity N^2 network connection
-at memcached connections.
+Split page rendering. Need memcached, increased network traffic increase cache
+effectiveness, increased control complexity N^2 network connection at memcached
+connections.
 
-Moving to EC2:
-positive: simpler fleet management, elastic scaling
-negative: smaller host, slower network, slower network 25-200% slower per packet.
+Moving to EC2: positive: simpler fleet management, elastic scaling negative:
+smaller host, slower network, slower network 25-200% slower per packet.
 
-Centralized remote caches
-a centralized memcached cluster; re-sync flood after cache server down
+Centralized remote caches a centralized memcached cluster; re-sync flood after
+cache server down
 
-Constraints:
-cheap cached path synchronous, expensive remote call path asynchronous, scalable non-blocking I/O unavailable, multple processes, unclean death; not thread-safe
+Constraints: cheap cached path synchronous, expensive remote call path
+asynchronous, scalable non-blocking I/O unavailable, multiple processes, unclean
+death; not thread-safe
 
-Usage pattern changes
-System architecture changed
+Usage pattern changes System architecture changed
 
 Get rid of local caches, use local shared caches, and remote shared caches
 
-IPC too slow for caching
-remote cache get is too slow. Context switch dominates delay.
-TCP is overkill. Parsing text message is too slow. Catch request and reply are slow, use pipeline.
-Use binary protocol
+IPC too slow for caching remote cache get is too slow. Context switch dominates
+delay. TCP is overkill. Parsing text message is too slow. Catch request and
+reply are slow, use pipeline. Use binary protocol
 
 Memory allocation; get as much data as possible into the memory.

@@ -17,6 +17,7 @@ int inc(int x) {
     return x;
 }
     
+// Adds two integers |x| and |y| without +.
 int add(int x, int y) {
     assert(x >= 0);
     assert(y >= 0);
@@ -50,8 +51,6 @@ int add2(int x, int y) {
     int p = 1;
     int res = 0;
     while (x || y || c) {
-        // cout<<"res: "<<res<<endl;
-
         if ((x & 1) ^ (y & 1)) {
             // differ
             if (c) {

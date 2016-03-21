@@ -10,8 +10,6 @@
 class Solution {
 public:
     TreeNode *sortedArrayToBST(vector<int> &num) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
         return helper(num, 0, num.size());
     }
     

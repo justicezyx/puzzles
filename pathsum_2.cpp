@@ -11,8 +11,6 @@ class Solution {
     std::vector<std::vector<int>> res;
 public:
     vector<vector<int>> pathSum(TreeNode *root, int sum) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
         res.clear();
         if (root == NULL) {
             return res;

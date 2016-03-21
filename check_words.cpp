@@ -3,7 +3,6 @@ using namespace std;
 
 bool check_words(const string& S, int s, int begin, int len, const map<string,int>& wc) {
     map<string,int> count;
-    // unordered_map<string,int>::const_iterator itor_t;
     for (int i = 0; i < len; i += s) {
         cout<<"i:"<<i<<endl;
         string t = S.substr(begin + i, s);

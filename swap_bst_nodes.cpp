@@ -21,6 +21,7 @@ struct TreeNode {
     TreeNode *right;
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
+
 /**
  * Definition for binary tree
  * struct TreeNode {

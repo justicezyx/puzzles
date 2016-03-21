@@ -23,6 +23,7 @@ int find_kth(int k, int A[], int a_len, int B[], int b_len) {
 */
 
 int find_kth(int k, int A[], int a_len, int B[], int b_len) {
+    assert(k >= 0);
     if (a_len <= 0) {
         return B[k];
     }
@@ -47,7 +48,7 @@ int find_kth(int k, int A[], int a_len, int B[], int b_len) {
 int main() {
     int A[] = {2,3,4};
     int B[] = {1};
-    int first = find_kth(1, A, 3, B, 1);
+    int first = find_kth(-1, A, 3, B, 1);
     int second = find_kth(2, A, 3, B, 1);
     cout<<first<<" "<<second<<endl;
 }

@@ -7,8 +7,6 @@
 class Solution {
 public:
     int minPathSum(vector<vector<int> > &grid) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
         int m = grid.size();
         if (m <= 0) {
             return 0;

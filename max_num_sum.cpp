@@ -1,8 +1,8 @@
 #include "common.h"
 
 /**
- * Given a list of integers, and another integeri 'v'.
- * Find a sub set of the list that sum up eaquals to the integer, and has the maximum number of elements.
+ * Given a list of integers, and another integer 'v'.
+ * Find a sub set of the list that sum up equals to the integer, and has the maximum number of elements.
  * 
  * Solution:
  * 1. srot the list.

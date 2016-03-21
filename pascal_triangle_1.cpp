@@ -1,9 +1,6 @@
 class Solution {
 public:
     vector<vector<int> > generate(int numRows) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
-        
         std::vector<std::vector<int>> res;
         if (numRows == 0) {
             return res;

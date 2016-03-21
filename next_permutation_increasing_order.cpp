@@ -6,7 +6,8 @@ public:
         vector<int>::iterator it = num.end() - 1;
     
         while (it!=num.begin() && (*(it-1) >= *it)) it--; //find *(it-1) < *it
-        if (it == num.begin()) { //last element, rewind to the first one, i.e, ascending order
+        if (it == num.begin()) {
+            //last element, rewind to the first one, i.e, ascending order
             reverse(it, num.end());
             return;
         }

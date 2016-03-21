@@ -8,8 +8,6 @@ public:
     typedef res_list_t::iterator res_list_itor_t;
     
     vector<vector<int>> combinationSum2(vector<int> &num, int target) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
         vector<res_list_t> dp(target+1);
         
         dp[0].push_back(res_t());

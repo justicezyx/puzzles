@@ -4,7 +4,9 @@
 
 #include "common.h"
 
-std::vector<std::string> num_to_string(const std::vector<int>& num, const std::vector<std::string>& mapping) {
+std::vector<std::string> num_to_string(const std::vector<int>& num,
+    const std::vector<std::string>& mapping) {
+
     typedef std::vector<int>::const_iterator itor;
 
     int str_len = num.size();

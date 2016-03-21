@@ -1,17 +1,16 @@
 /**
- * Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do it in place.
+ * Given a m x n matrix, if an element is 0, set its entire row and column to 0.
+ * Do it in place.
  *
- * Follow up:
- * Did you use extra space?
- * A straight forward solution using O(mn) space is probably a bad idea.
- * A simple improvement uses O(m + n) space, but still not
+ * Follow up: Did you use extra space?  A straight forward solution using O(mn)
+ * space is probably a bad idea.  A simple improvement uses O(m + n) space, but
+ * still not
  */
 
 class Solution {
 public:
+    // Use first row and first column as makers.
     void setZeroes(vector<vector<int> > &matrix) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
         int m = matrix.size();
         if (m == 0) {
             return;

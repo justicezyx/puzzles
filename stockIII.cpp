@@ -1,9 +1,10 @@
 #include "common.h"
 
 /**
- * Return the maximum profit of stock tracking; which are restricted to at most 2 trasactions.
- * The stock can only be bought after the previsou bought stock is sold, if there is any.
- * However, the buying and selling of the stack can happen on the same day.
+ * Return the maximum profit of stock tracking; which are restricted to at most
+ * 2 transactions.  The stock can only be bought after the previous bought stock
+ * is sold, if there is any.  However, the buying and selling of the stack can
+ * happen on the same day.
  */
 int max_profit(const std::vector<int>& prices) {
     std::vector<int> profits(prices.size(), 0);

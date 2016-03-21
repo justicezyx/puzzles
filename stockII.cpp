@@ -4,8 +4,6 @@ int find_local_min(const std::vector<int>& prices, int start);
 int find_local_max(const std::vector<int>& prices, int start);
 
 int maxProfit(std::vector<int> &prices) {
-    // Start typing your C/C++ solution below
-    // DO NOT write int main() function
     int max = 0;
     for (int i = 0; i < prices.size(); ) {
         int min_pos = find_local_min(prices, i);

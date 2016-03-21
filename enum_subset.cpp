@@ -1,8 +1,6 @@
 class Solution {
 public:
-    vector<vector<int> > subsets(vector<int> &S) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
+    vector<vector<int>> subsets(vector<int> &S) {
         vector<vector<int>> res;
         if (S.empty()) {
             res.push_back(vector<int>());

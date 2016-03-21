@@ -1,8 +1,7 @@
 #include "common.h"
 
-/**
- * Given an input array and a value, find the subarray that sums up equals to the value,
- * and has the maximum length.
+/** Given an input array and a value, find the subarray that sums up equals to
+ * the value, and has the maximum length.
  */
 std::pair<int,int> longest_subarray_sum(const std::vector<int>& array, int sum) {
     if (array.size() == 0) {

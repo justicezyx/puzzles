@@ -1,8 +1,6 @@
 class Solution {
 public:
     string addBinary(string a, string b) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
         stack<char> res;
         for (int ai = a.size() - 1, bi = b.size() - 1, carry = 0;
              ai >= 0 || bi >= 0 || carry;

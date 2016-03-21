@@ -7,7 +7,7 @@ int mincut(const std::string& s) {
     for (int i = 0; i < s.size(); i++) {
         is_par[i] = new int[s.size()];
         memset(is_par[i], 0, s.size());
-        is_par[i][0] = 1; // substring starting at i with length 1 is a parlindrome.
+        is_par[i][0] = 1; // substring starting at i with length 1 is a palindrome.
         dp[i] = i;
     }
     dp[s.size()] = s.size();

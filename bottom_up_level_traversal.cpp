@@ -10,8 +10,6 @@
 class Solution {
 public:
     vector<vector<int> > levelOrderBottom(TreeNode *root) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
         std::vector<std::vector<TreeNode*>> res;
         std::vector<std::vector<int>> val_res;
         if (root == NULL) {
@@ -36,10 +34,7 @@ public:
         res.pop_back();
         
         val_res.reserve(res.size());
-        for (std::vector<std::vector<TreeNode*>>::reverse_iterator itor = res.rbegin();
-             itor != res.rend();
-             ++itor) {
-            
+        for (auto itor = res.rbegin(); itor != res.rend(); ++itor) {
             std::vector<int> t;
             t.reserve(itor->size());
             for (int i = 0; i < itor->size(); ++i) {

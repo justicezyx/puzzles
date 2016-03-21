@@ -1,8 +1,6 @@
 class Solution {
 public:
     string minWindow(string S, string T) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
         map<char, int> char_count;
         for (int i = 0; i < T.size(); ++i) {
             ++char_count[T[i]];

@@ -4,8 +4,6 @@ using namespace std;
 class Solution {
 public:
     vector<vector<string>> partition(string s) {
-        // Start typing your C/C++ solution below
-        // DO NOT write int main() function
         vector<vector<int>> is_par(s.size());
         for (int i = 0; i < s.size(); ++i) {
             is_par[i].resize(s.size(), 0);

@@ -1,11 +1,11 @@
 #include "common.h"
 using namespace std;
 
-vector<vector<int> > fourSum(vector<int> &num, int target) {
+vector<vector<int>> fourSum(vector<int> &num, int target) {
     // Start typing your C/C++ solution below
     // DO NOT write int main() function
     int n = num.size();
-    vector<vector<int> > ret;
+    vector<vector<int>> ret;
 
     sort(num.begin(), num.end());
     for (int i = 0; i < n; ++i) {
@@ -48,7 +48,7 @@ int main() {
     nums.push_back(1);
     nums.push_back(1);
 
-    vector<vector<int> > res = fourSum(nums, 4);
+    vector<vector<int>> res = fourSum(nums, 4);
     for (int i = 0; i < res.size(); ++i) {
         for (int j = 0; j < res[0].size(); ++j) {
             std::cout<<res[i][j]<<" ";

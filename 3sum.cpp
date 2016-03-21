@@ -4,16 +4,16 @@ namespace puzzles {
 
 class Solution {
 public:
-    vector<vector<int> > threeSum(vector<int> &num) {
+    vector<vector<int>> threeSum(vector<int> &num) {
         sort(num.begin(), num.end());
-        vector<vector<int> > res;
+        vector<vector<int>> res;
         for (size_t i = 0; i < num.size(); ++i) {
             if (i != 0 && num[i] == num[i-1]) {
                 continue;
             }
             int v = num[i];
             int v_ = -v;
-            vector<pair<int,int> > two_sums = two_sum(v_, num.begin() + i + 1, num.end());
+            vector<pair<int,int>> two_sums = two_sum(v_, num.begin() + i + 1, num.end());
             for (size_t j = 0; j < two_sums.size(); ++j) {
                 vector<int> tmp;
                 tmp.reserve(3);
@@ -27,9 +27,9 @@ public:
     }
 
     typedef vector<int>::iterator itor_t;
-    vector<pair<int,int> > two_sum(int k, itor_t begin, itor_t end) {
+    vector<pair<int,int>> two_sum(int k, itor_t begin, itor_t end) {
         --end;
-        vector<pair<int,int> > res;
+        vector<pair<int,int>> res;
         for (itor_t l = begin, r = end ; l < r; ) {
             int sum = *l + *r;
             if (sum == k) {
@@ -50,7 +50,7 @@ public:
     }
 };
 
-} // puzzles
+}  // namespace puzzles
 
 int main() {
 }
