@@ -7,6 +7,8 @@
  * "((((((()))))))" return 14
  */
 
+using namespace std;
+
 int longest_valid_parentheses(const string& s) {
     stack<int> pos;
     int max = 0;
@@ -24,7 +26,7 @@ int longest_valid_parentheses(const string& s) {
 }
 
 void test() {
-    string s = "()(())";
+    string s = "())(())";
     cout<<longest_valid_parentheses(s)<<endl;
 }
 
