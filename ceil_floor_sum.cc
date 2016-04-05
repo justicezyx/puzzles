@@ -79,4 +79,10 @@ int main() {
   for (const auto v :result) {
     std::cout << std::get<2>(v) << " : " << std::get<1>(v) << std::endl;
   }
+
+  result = min_abs_diff_floor_ceil_sum({}, 8);
+  std::cout << "result size: " << result.size() << std::endl;
+
+  result = min_abs_diff_floor_ceil_sum({1.1, 1.2}, 8);
+  std::cout << "result size: " << result.size() << std::endl;
 }
