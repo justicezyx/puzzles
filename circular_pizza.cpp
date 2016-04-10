@@ -1,14 +1,13 @@
 #include "common.h"
 
-/**
- * Question: 
- * Given an pizza being sperated into n pieces, each piece has a weight;
- * these n numbers are input as an array.
- * Now, starting with you, each of the 2 players pick one and the oponent
- * pick 2 immediately on the left and right of the picked one.
- * How to maximize the weight piced by you?
- */
-// given an input array of n pieces. 
+// Question: 
+// Given an pizza being separated into n pieces, each piece has a weight;
+// these n numbers are input as an array.
+// Now, starting with you, each of the 2 players pick one and the opponent
+// pick 2 immediately on the left and right of the picked one.
+// How to maximize the weight picked by you?
+
+// Given an input array of n pieces. 
 // find the sequence that skips exact 1 element and has the maximum sum,
 // while at the same time has a length of ceil(n / 3).
 // the below is a brute force approach.
@@ -38,8 +37,8 @@ int rand_mod() {
 
 void test() {
     srand(time(0));
-    std::vector<int> input = rnd_fill(9, rand_mod); 
-    print(input.begin(), input.end());
+    std::vector<int> input = puzzles::rnd_fill(9, rand_mod); 
+    puzzles::print(input.begin(), input.end());
     std::pair<int,int> res = brute_force(input);
     std::cout<<res.first<<" "<<res.second<<std::endl;
 }
