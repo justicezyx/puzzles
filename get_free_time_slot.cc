@@ -1,7 +1,7 @@
 // Given a list busy time range for multiple users; find the time slots for
 // which all users are free.
 
-#include "assert.h"
+#include "common/assert.h"
 #include "common/util.h"
 
 #include <iostream>

@@ -1,7 +1,7 @@
 // Given a list of words that are sorted in alphabetic order. Return a sequence
 // of all characters that follow the ordering specified in the word order.
 
-#include "assert.h"
+#include "common/assert.h"
 
 #include <iostream>
 #include <string>
