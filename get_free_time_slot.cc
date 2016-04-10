@@ -2,7 +2,7 @@
 // which all users are free.
 
 #include "assert.h"
-#include "util.h"
+#include "common/util.h"
 
 #include <iostream>
 #include <vector>
