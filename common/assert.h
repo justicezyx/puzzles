@@ -1,6 +1,8 @@
 #ifndef ASSERT_H
 #define ASSERT_H
 
+#include <iostream>
+
 #define ASSERT_TRUE(predict) do { \
   if (!(predict)) { \
     std::cout << "FAILED: " << #predict << std::endl; \
@@ -12,6 +14,8 @@
 #define EXPECT_EQ(a, b) do { \
   if ((a) != (b)) { \
     std::cout << "FAILED: " << #a << " != " << #b << std::endl; \
+    std::cout << "EXPECTED: " << (a) << std::endl; \
+    std::cout << "ACTUAL: " << (b) << std::endl; \
   } else { \
     std::cout << "PASSED: " << #a << " == " << #b << std::endl; \
   } \
