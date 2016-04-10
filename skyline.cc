@@ -2,12 +2,13 @@
 using namespace std;
 
 struct endpoint {
-    typedef pair<double,int> key_t;
+    typedef pair<double, int> key_t;
 
     int building_id;
     double pos;
     double height;
     bool is_begin;
+
     pair<double,int> get_key() const {
         return make_pair(height, building_id);
     }
@@ -18,7 +19,7 @@ struct building {
     double begin;
     double width;
     double height;
-    
+
     endpoint get_left_end() const {
         endpoint res;
         res.building_id = id;
@@ -43,7 +44,7 @@ vector<endpoint> get_endpoints(const vector<building>& buildings) {
     if (buildings.empty()) {
         return res;
     }
-    
+
     res.reserve(buildings.size() * 2);
     for (int i = 0; i < buildings.size(); ++i) {
         endpoint left = buildings[i].get_left_end();
@@ -62,7 +63,7 @@ ostream& operator<<(ostream& os, const point_t& p) {
     os<<p.first<<" "<<p.second<<endl;
     return os;
 }
-    
+
 struct endpoint_less {
     bool operator() (const endpoint& l, const endpoint& r) const {
         if (l.pos < r.pos) {
@@ -82,7 +83,7 @@ vector<point_t> get_border(const vector<building>& buildings) {
         cout<<" "<<endpoints[i].pos;
     }
     cout<<endl;
-    
+
     map<endpoint::key_t, int> helper;
     vector<point_t> res;
 
@@ -110,7 +111,7 @@ int main() {
     b0.begin = 0.1;
     b0.width = 1.1;
     b0.height = 2.1;
-    
+
     building b1;
     b1.begin = 0.4;
     b1.width = 1.1;
