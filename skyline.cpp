@@ -60,6 +60,7 @@ vector<endpoint> get_endpoints(const vector<building>& buildings) {
 typedef pair<double, double> point_t;
 ostream& operator<<(ostream& os, const point_t& p) {
     os<<p.first<<" "<<p.second<<endl;
+    return os;
 }
     
 struct endpoint_less {
