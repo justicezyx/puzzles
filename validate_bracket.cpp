@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 bool validate(const std::string& input) {
     std::stack<char> h;

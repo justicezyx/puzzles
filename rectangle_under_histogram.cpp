@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 /**
  * Find the maximum rectangle inside the area of a histogram.

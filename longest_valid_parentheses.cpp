@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 /**
  * Find the longest sub string that forms a valid parentheses string

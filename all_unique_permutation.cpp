@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 void helper(std::vector<int>& num, int begin, int end, std::vector<std::vector<int> >& res) {
     if (end - begin == 1) {

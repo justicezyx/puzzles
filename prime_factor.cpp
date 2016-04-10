@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 /**
  * Given an integer, find the factors that are all primes.

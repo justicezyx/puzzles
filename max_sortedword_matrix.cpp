@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-#include "common.h"
+#include "common/common.h"
 
 struct position {
     int r;

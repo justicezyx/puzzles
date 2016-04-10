@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 pair<int,int> partion(int* array, int begin, int end, int v) {
     int low = begin;

@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 int jump_opt(const std::vector<int>& A) {
     int step = 0;

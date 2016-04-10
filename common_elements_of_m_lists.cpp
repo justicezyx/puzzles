@@ -2,7 +2,7 @@
  * Find the common elements of m sorted lists.
  */
 
-#include "common.h"
+#include "common/common.h"
 
 vector<int> common_elements(const vector<vector<int>>& lists) {
     vector<int> res;

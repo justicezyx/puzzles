@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 std::vector<int> get_sample(int total, int s) {
     std::vector<int> res;

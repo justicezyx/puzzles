@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 
-#include "common.h"
+#include "common/common.h"
 
 std::vector<std::string> num_to_string(const std::vector<int>& num,
     const std::vector<std::string>& mapping) {

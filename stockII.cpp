@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 int find_local_min(const std::vector<int>& prices, int start);
 int find_local_max(const std::vector<int>& prices, int start);

@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 /** Given an input array and a value, find the subarray that sums up equals to
  * the value, and has the maximum length.

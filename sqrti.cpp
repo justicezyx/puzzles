@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 int sqrt(int x) {
     // Start typing your C/C++ solution below

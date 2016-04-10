@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 std::vector<std::vector<std::string>> 
 min_dist(std::string start, std::string end, std::set<std::string>& dict);

@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 /**
  * Given an integer array, it gives the max dist can jump

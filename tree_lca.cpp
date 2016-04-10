@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 #include "node.h"
 
 bool dfs(node* root, node* n, std::list<node*>& path) {

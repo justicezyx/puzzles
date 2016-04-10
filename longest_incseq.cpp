@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm>
 
-#include "common.h"
+#include "common/common.h"
 
 int longest_incseq(const std::vector<int>& num) {
     std::vector<int> end_idx_for_incseq_len(num.size() + 1, -1);

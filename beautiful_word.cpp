@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-#include "common.h"
+#include "common/common.h"
 std::string most_beautiful_word(const std::string& str) {
     typedef std::string::iterator itor;
     int* count = new int[256]();

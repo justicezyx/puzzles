@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 /**
  * A matrix contains '1' and '0'. Find the rectangle inside this matrix that

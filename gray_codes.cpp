@@ -27,7 +27,7 @@
  * 111
  */
 
-#include "common.h"
+#include "common/common.h"
 
 namespace puzzles {
 

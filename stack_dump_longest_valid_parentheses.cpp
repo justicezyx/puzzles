@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 int longestValidParentheses(string s) {
     stack<int> pos;

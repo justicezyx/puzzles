@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 using namespace std;
 
 vector<string> print_board(const vector<int>& poses) {

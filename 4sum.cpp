@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 using namespace std;
 
 vector<vector<int>> fourSum(vector<int> &num, int target) {

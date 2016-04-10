@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 /**
  * A matrix filled with "1" and "0", find the maximum rectangle filled will all "1".

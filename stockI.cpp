@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 int max_profit(const std::vector<int>& prices) {
     if (prices.size() <= 1) {

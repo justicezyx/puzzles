@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 // need this to store the move for
 // 1. there are m stons left

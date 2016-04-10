@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 /**
  * Return the maximum profit of stock tracking; which are restricted to at most

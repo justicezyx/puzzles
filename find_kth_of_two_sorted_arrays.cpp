@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 using namespace std;
 /*
 int find_kth(int k, int A[], int a_len, int B[], int b_len) {

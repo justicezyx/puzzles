@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cassert>
 
-#include "common.h"
+#include "common/common.h"
 
 int inc(int x) {
     // return x + 1

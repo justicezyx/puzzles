@@ -4,7 +4,7 @@
 #include <algorithm>
 #include <numeric>
 
-#include "common.h"
+#include "common/common.h"
 
 int max_sum_subarray(const std::vector<int>& input) {
     int max = std::numeric_limits<int>::min();

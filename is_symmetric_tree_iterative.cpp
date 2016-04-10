@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 using namespace std;
 
 struct TreeNode {

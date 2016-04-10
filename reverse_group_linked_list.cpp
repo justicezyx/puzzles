@@ -1,7 +1,7 @@
 /**
  * Definition for singly-linked list.
  */
-#include "common.h"
+#include "common/common.h"
 using namespace std;
 
 struct ListNode {

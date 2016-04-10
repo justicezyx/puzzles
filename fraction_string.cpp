@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 std::string fraction_lessone(int n, int d);
 std::string fraction(int n, int d) {

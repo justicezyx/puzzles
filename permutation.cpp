@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 void helper(vector<int>& nums, int pos, vector<vector<int>>& res) {
     cout<<"pos:"<<pos<<endl;

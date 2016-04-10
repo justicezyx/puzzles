@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 typedef std::pair<int,int> interval_t;
 typedef std::list<interval_t> interval_list_t;

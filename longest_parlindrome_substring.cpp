@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 /**
  * Get the mirrored position of 'r' to the right of center 'c'

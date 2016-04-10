@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 int binary_rand() {
     return rand() % 2;

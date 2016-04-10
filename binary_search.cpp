@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 
 struct comp {
     bool operator()(const int& a, const int& b) const {

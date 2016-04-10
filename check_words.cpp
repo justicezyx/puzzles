@@ -1,4 +1,4 @@
-#include "common.h"
+#include "common/common.h"
 using namespace std;
 
 bool check_words(const string& S, int s, int begin, int len, const map<string,int>& wc) {

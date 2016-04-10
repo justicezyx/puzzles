@@ -4,7 +4,7 @@
  * Write a function to find the maximum profit by displaying ads on each slot.
  */
 
-#include "common.h"
+#include "common/common.h"
 using namespace std;
 
 int max_profit(int N, const vector<int>& P) {

@@ -16,7 +16,7 @@
  * but no overflow is possible.
  */
 
-#include "common.h"
+#include "common/common.h"
 
 typedef pair<int, int> range_t;
 
