@@ -19,4 +19,7 @@
   } \
 } while(false);
 
+#define EXPECT_TRUE(exp) EXPECT_EQ(true, exp)
+#define EXPECT_FALSE(exp) EXPECT_EQ(false, exp)
+
 #endif  // ASSERT_H
