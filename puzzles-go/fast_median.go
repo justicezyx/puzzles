@@ -76,11 +76,11 @@ func (this *MedianFinder) addNum(v int) {
 
 	fmt.Println("this.left:", this.left, "this.right", this.right)
 
+	// Rebalance 2 parts such that their size difference is at most 1
 	for len(this.left)-len(this.right) > 1 {
 		v := heap.Pop(&this.left)
 		heap.Push(&this.right, v)
 	}
-
 	for len(this.right)-len(this.left) > 1 {
 		v := heap.Pop(&this.right)
 		heap.Push(&this.left, v)
@@ -112,5 +112,6 @@ func main() {
 	mf.addNum(5)
 	mf.addNum(5)
 	mf.addNum(5)
+	mf.addNum(7)
 	fmt.Println(mf.findMedian())
 }
