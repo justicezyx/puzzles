@@ -5,9 +5,7 @@ from feature_store import write, read, db
 
 
 def clean_db():
-  keys = db.keys()
-  for k in keys:
-    del db[k]
+  db.clear()
 
 
 @pytest.fixture(autouse=True)
