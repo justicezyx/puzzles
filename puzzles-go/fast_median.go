@@ -8,7 +8,7 @@ Implement the MedianFinder class:
 - void addNum(int num) adds the integer num from the data stream to the data structure.
 - double findMedian() returns the median of all elements so far.
 */
-package main
+package puzzles
 
 import (
 	"container/heap"
@@ -98,20 +98,4 @@ func (this *MedianFinder) findMedian() float64 {
 	} else {
 		return (float64(this.left[0]) + float64(this.right[0])) / 2
 	}
-}
-
-func main() {
-	mf := NewMedianFinder()
-	mf.addNum(2)
-	mf.addNum(3)
-	mf.addNum(4)
-	mf.addNum(5)
-	mf.addNum(5)
-	mf.addNum(5)
-	mf.addNum(5)
-	mf.addNum(5)
-	mf.addNum(5)
-	mf.addNum(5)
-	mf.addNum(7)
-	fmt.Println(mf.findMedian())
 }
