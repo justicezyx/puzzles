@@ -13,8 +13,16 @@ func TestMemPool(t *testing.T) {
 		t.Fatalf("Memory pool capacity should be 100, got %d", p.Cap())
 	}
 
-	_, err = p.Allocate(100)
+	r, err := p.Allocate(100)
 	if err != nil {
 		t.Fatalf("Failed to allocate memory with size 100, error %v", err)
+	}
+	if r.Offset != 0 {
+		t.Errorf("Failed to allocate memory with size 100, got wrong memory region %v", r)
+	}
+
+	_, err = p.Allocate(100)
+	if err == nil {
+		t.Fatalf("Should fail to allocate memory with size 100, got no error")
 	}
 }
