@@ -1,8 +1,13 @@
 # Initial analysis
 
 Analyze the following coding interview question.
-provide a quick summary of the problem, identify the key challenge of the problem,
-and provide a high level overview of the solution.
+Write your response in succinct words, format everything as bullet points.
+
+First provide a brief summary of the problem,
+
+Then identify the key challenge of the problem,
+
+Finally, provide a brief description of your solution, and provide summary of the key ideas of the sulution.
 
 """
 Given an m x n 2D binary grid grid which represents a map of '1's (land) and '0's (water), return the largest body of water.
@@ -22,8 +27,8 @@ Output: 6
 
 Write the solution in python
 
-Define everything in simple functions, not using classes
+Define everything in simple functions, do not use classes
 
-Write 1 simple test at the end of the solution
+Write 1 simple test at the end of the solution, write it in simple function, and write code to invoke the test in main()
 
-Summarize the time and space complexity in the end
+Summarize the time and space complexity of the solution after the python code
