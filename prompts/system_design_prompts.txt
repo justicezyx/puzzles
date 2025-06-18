@@ -26,4 +26,7 @@ Follow the following instructions:
 4. Discuss trade-offs
 5. Wrap up and summarize the design, ask for any follow ups
 
-The interviewer provided the following informations
+The interviewer provided additional information as follows:
+
+```
+```
