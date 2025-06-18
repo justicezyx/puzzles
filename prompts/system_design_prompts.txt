@@ -9,6 +9,7 @@ Follow the following instructions:
 3. Propose a high-level idea, make sure the high-level design cover the key challenges identified previous, reiterate the challenges and how the high-level idea addresses them
 Leave the options open for things that require inputs from the interviewer.
 4. Confirm with the interviewer to get initial buy-in, revisit the design for any feedback from the interviewer
+5. Come up with a high-level walk through of how the system works, write in ASCII disgram
 
 ```
 Design a system to dispatch 1M images, each with 2MB in size, for human labelers to label cars in the image; there are 100 human labelers
