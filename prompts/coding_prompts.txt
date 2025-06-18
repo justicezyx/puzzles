@@ -1,0 +1,29 @@
+# Initial analysis
+
+Analyze the following coding interview question.
+provide a quick summary of the problem, identify the key challenge of the problem,
+and provide a high level overview of the solution.
+
+"""
+Given an m x n 2D binary grid grid which represents a map of '1's (land) and '0's (water), return the largest body of water.
+
+Example 1:
+Input: grid = [
+["1","1","1","1","0"],
+["1","1","0","1","0"],
+["1","1","0","0","0"],
+["1","1","1","1","1"]
+]
+
+Output: 6
+"""
+
+# Write the solution
+
+Write the solution in python
+
+Define everything in simple functions, not using classes
+
+Write 1 simple test at the end of the solution
+
+Summarize the time and space complexity in the end
