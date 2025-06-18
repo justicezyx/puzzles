@@ -1,26 +1,29 @@
 # Prompts
 
-Provide a high-level design to solve this system design interview problem:
-
-```
-
-Design a system to dispatch 1M images, each with 2MB in size, for human labelers to label cars in the image; there are 100 human labelers
-
-```
-
+Analyze the following system design interview problem.
 Write your responses in succinct text, use bullet points.
+Follow the following instructions:
 
-With the following instructions:
+1. First dissect the problem, clarify context, identify the key challenges
+2. Then, based on the analysis, ask the interviewer for any missing information might be important for solving this problem, or change how you would approach the problem
+3. Propose a high-level idea, make sure the high-level design cover the key challenges identified previous, reiterate the challenges and how the high-level idea addresses them
+Leave the options open for things that require inputs from the interviewer.
+4. Confirm with the interviewer to get initial buy-in, revisit the design for any feedback from the interviewer
 
-1. First analyze the problem, clarify context, identify the key challenges, ask for any missing information might be important for solving this problem
-
-2. Propose a high-level idea, make sure the high-level design cover the key challenges identified previous, reiterate the challenges and how the high-level idea addresses them
-
-3. Confirm with the interviewer to get initial buy-in, revisit the design for any feedback from the interviewer
+```
+Design a system to dispatch 1M images, each with 2MB in size, for human labelers to label cars in the image; there are 100 human labelers
+```
 
 # Detailed design
 
+Design the system to meet all requirements with sufficient details for engineers to implement.
 Write your responses in succinct text, use bullet points.
-Dive into the details to flesh out key design areas, identify Cloud systems and open source systems as candidate solutions
+Follow the following instructions:
 
-Wrap up and summarize the design, ask for any follow ups
+1. Dive into the details to flesh out key design areas
+2. Propose Public Cloud services and/or open source systems as candidate solutions, provide additional backup options in addition to the recommended option(s)
+3. Explain the rationale
+4. Discuss trade-offs
+5. Wrap up and summarize the design, ask for any follow ups
+
+The interviewer provided the following informations
