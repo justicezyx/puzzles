@@ -9,7 +9,7 @@ Follow the following instructions:
 3. Propose a high-level idea, make sure the high-level design cover the key challenges identified previous, reiterate the challenges and how the high-level idea addresses them
 Leave the options open for things that require inputs from the interviewer.
 4. Confirm with the interviewer to get initial buy-in, revisit the design for any feedback from the interviewer
-5. Come up with a high-level walk through of how the system works, write in ASCII disgram
+5. Provide a high-level walk through of how the system works, write in bullet points, also provide ASCII diagram(s) to aid understanding
 
 ```
 Design a system to dispatch 1M images, each with 2MB in size, for human labelers to label cars in the image; there are 100 human labelers
@@ -21,11 +21,12 @@ Design the system to meet all requirements with sufficient details for engineers
 Write your responses in succinct text, use bullet points.
 Follow the following instructions:
 
-1. Dive into the details to flesh out key design areas
-2. Propose Public Cloud services and/or open source systems as candidate solutions, provide additional backup options in addition to the recommended option(s)
-3. Explain the rationale
-4. Discuss trade-offs
-5. Wrap up and summarize the design, ask for any follow ups
+1. Dive into the details to flesh out key design areas, define service interfaces
+2. Provide a detailed walk through of how the system works, write ASCII diagrams to aid understanding, and bullet points of the steps
+3. Propose Public Cloud services and/or open source systems as candidate solutions, provide additional backup options in addition to the recommended option(s)
+4. Explain the rationale
+5. Discuss trade-offs
+6. Wrap up and summarize the design, ask for any follow ups
 
 The interviewer provided additional information as follows:
 
