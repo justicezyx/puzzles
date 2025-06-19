@@ -3,23 +3,17 @@
 Analyze the following coding interview question.
 Write your response in succinct words, format everything as bullet points.
 
-First provide a brief summary of the problem,
-
-Then identify the key challenge of the problem,
-
-Finally, provide a brief description of your solution, and provide summary of the key ideas of the sulution.
+1. Provide a brief summary of the problem,
+2. Identify the key challenge of the problem,
+3. Provide a brief description of your solution, and provide summary of the key ideas of the sulution.
 
 # Write the solution
 
-Write the solution in python
+Write the solution in python, define everything in simple functions, do not use classes
 
-Before writing the python code, provide an overview of the code in correspondance to the previous description of the solution.
-
-Define everything in simple functions, do not use classes
-
-Write 1 simple test at the end of the solution, write it in simple function, and write code to invoke the test in main()
-
-Summarize the time and space complexity of the solution after the python code
+1. Before writing the python code, provide an overview of the code in correspondance to the previous description of the solution.
+2. Write 1 simple test at the end of the solution, write it in simple function, and write code to invoke the test in main()
+3. Summarize the time and space complexity of the solution after the python code
 
 # The problem statement
 
