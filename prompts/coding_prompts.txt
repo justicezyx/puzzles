@@ -9,10 +9,6 @@ Then identify the key challenge of the problem,
 
 Finally, provide a brief description of your solution, and provide summary of the key ideas of the sulution.
 
-```
-<problem definition>
-```
-
 # Write the solution
 
 Write the solution in python
@@ -24,3 +20,8 @@ Define everything in simple functions, do not use classes
 Write 1 simple test at the end of the solution, write it in simple function, and write code to invoke the test in main()
 
 Summarize the time and space complexity of the solution after the python code
+
+# The problem statement
+
+```
+```
