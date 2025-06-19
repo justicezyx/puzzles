@@ -9,23 +9,15 @@ Then identify the key challenge of the problem,
 
 Finally, provide a brief description of your solution, and provide summary of the key ideas of the sulution.
 
-"""
-Given an m x n 2D binary grid grid which represents a map of '1's (land) and '0's (water), return the largest body of water.
-
-Example 1:
-Input: grid = [
-["1","1","1","1","0"],
-["1","1","0","1","0"],
-["1","1","0","0","0"],
-["1","1","1","1","1"]
-]
-
-Output: 6
-"""
+```
+<problem definition>
+```
 
 # Write the solution
 
 Write the solution in python
+
+Before writing the python code, provide an overview of the code in correspondance to the previous description of the solution.
 
 Define everything in simple functions, do not use classes
 
